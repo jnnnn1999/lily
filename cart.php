@@ -60,21 +60,22 @@
                     </ul>
                 </div><!--/#sidebar -->
                 <div id="content_area">
+                    <div id="shopping_cart" align="right" style="padding: 15px;">
                     <?php
-                        cart();
+                        if(isset($_SESSION['customer_email'])){
+
+                            echo "<b> Your Email:</b>" . $_SESSION['customer_email'];
+                        }else{
+
+                            echo "";
+                        }
+                        
                     ?>
+
+                    <b style="color:navy">Your Cart - </b> Total Items: <?php total_items(); ?> Total Ptice: <?php total_price(); ?>
+                    </div>
                     <div id="products_box">
-                        <?php
-                        getPro();
-                        ?>
 
-                        <?php
-                        get_pro_by_cat_id();
-                        ?>
-
-                        <?php
-                        get_pro_by_brand_id();
-                        ?>
                     </div><!--products_box-->
                 </div>
             </div><!-- /.content_wrapper -->

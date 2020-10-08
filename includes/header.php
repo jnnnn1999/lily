@@ -28,6 +28,17 @@ include("functions/functions.php");
                     <li class="dropdown_header_cart">
                         <div id="notification_total_cart" class="shopping-cart">
                             <img src="images/cart_icon.png" id="cart_image">
+                                <div class="noti_cart_number" style="
+                                                                        background: red;
+                                                                        color:white;
+                                                                        position: absolute;
+                                                                        top: -3px;
+                                                                        left: 38px;
+                                                                        padding: 1px 3px 1px 3px;">
+                                    <?php
+                                        total_items();
+                                    ?>
+                                </div><!-- /.noti_cart_number-->
                         </div>
                     </li>
                 </ul>

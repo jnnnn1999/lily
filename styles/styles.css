@@ -43,7 +43,7 @@ time, mark, audio, video {
 .header_logo
 {
     float: left;
-    width: 150px;
+    width: 300px;
     margin-top: 10px;
 }
 #form
@@ -72,6 +72,7 @@ time, mark, audio, video {
     width: 60px;
     text-align: center;
     z-index: 1000;
+    
 }
 .cart img
 {
@@ -86,6 +87,16 @@ time, mark, audio, video {
     width: auto;
     z-index: 1;
 }
+/*.cart .noti_cart_number ใส่ใน class เลย
+{
+    background: red;
+    color:white;
+    position: absolute;
+    top: -5px;
+    left: 25px;
+    padding: 1px 3px 1px 3px;
+    
+}*/
 .register_login 
 {
     float: left;
